@@ -6,8 +6,19 @@
       align-items: center
       justify-content: flex-start
     &__item
-      max-width: none
-      width: 600px
+      max-width: 600px
+      width: 100%
+      max-height: 180px
+      height: 100%
+      &-wrapper
+        width: 100%
+        align-items: center
+        &_inner
+          width: 100%
+          align-items: center
+      &_large
+        max-height: none
+        height: auto
       &_small
         justify-content: space-between
       &-text
@@ -15,6 +26,7 @@
         &_large
           max-width: none
       &-img
+        margin: 0 20px
         &_large
           margin: 0 0 -50px
       &_2 .steps__item-img

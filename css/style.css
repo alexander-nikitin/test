@@ -473,12 +473,15 @@ a {
   .steps {
     padding: 50px 80px; }
     .steps__item {
-      height: 240px;
-      max-width: 400px; }
+      max-height: 240px;
+      height: 100%;
+      max-width: 400px;
+      width: 100%; }
       .steps__item-wrapper_inner {
         flex-direction: column; }
       .steps__item_large {
         padding: 30px 30px 18px;
+        max-height: none;
         height: auto; }
       .steps__item_small {
         flex-direction: row;
@@ -488,7 +491,7 @@ a {
         .steps__item-text_large {
           max-width: none; }
       .steps__item-img {
-        margin: 20px; }
+        margin: 30px 20px; }
         .steps__item-img_large {
           margin: -50px 0 -50px; }
         .steps__item-img_small {
@@ -515,19 +518,55 @@ a {
       align-items: center;
       justify-content: flex-start; }
     .steps__item {
-      max-width: none;
-      width: 600px; }
+      max-width: 600px;
+      width: 100%;
+      max-height: 180px;
+      height: 100%; }
+      .steps__item-wrapper {
+        width: 100%;
+        align-items: center; }
+        .steps__item-wrapper_inner {
+          width: 100%;
+          align-items: center; }
+      .steps__item_large {
+        max-height: none;
+        height: auto; }
       .steps__item_small {
         justify-content: space-between; }
       .steps__item-text {
         max-width: 330px; }
         .steps__item-text_large {
           max-width: none; }
-      .steps__item-img_large {
-        margin: 0 0 -50px; }
+      .steps__item-img {
+        margin: 0 20px; }
+        .steps__item-img_large {
+          margin: 0 0 -50px; }
       .steps__item_2 .steps__item-img {
         padding-right: 45px; }
     .steps__arrow-wrapper {
       display: none; }
     .steps__note {
       margin-top: 20px; } }
+
+@media screen and (max-width: 719px) {
+  .steps {
+    padding: 50px 0; }
+    .steps__item {
+      padding-bottom: 5px;
+      width: 100%;
+      max-height: 189px;
+      height: 100%; }
+      .steps__item_large {
+        padding-bottom: 17px;
+        max-height: none; }
+      .steps__item-img {
+        margin: 0; }
+        .steps__item-img_large {
+          margin: 0 0 -50px; }
+      .steps__item_2 .steps__item-img {
+        padding-right: 35px; }
+      .steps__item_3 .steps__item-img {
+        margin-right: -10px; }
+      .steps__item_5 .steps__item-img {
+        margin-right: -10px;
+        margin-bottom: 35px; } }
