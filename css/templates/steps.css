@@ -1,0 +1,9 @@
+.steps__inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.steps__item_large {
+  background-color: #F5F48E; }
