@@ -1,4 +1,5 @@
 .steps
+	padding: 50px 100px
 	&__inner
 		display: -webkit-flex
 		display: -moz-flex
@@ -6,6 +7,35 @@
 		display: -o-flex
 		display: flex
 	&__item
+		position: relative
+		padding: 30px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		&-wrapper
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			&_inner
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+		&_2
+			background-color: #C4E4DC
+		&_3
+			background-color: #F5F48E
+		&_4
+			background-color: #C1DE7E
+		&_5
+			background-color: #C4E4DC
 		&_large
 			padding: 30px 40px 18px
 			max-width: 500px
@@ -17,8 +47,20 @@
 			flex-direction: column
 			justify-content: space-between
 			background-color: #F5F48E
+		&_small
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: center
 		&-title
 			font-family: 'Montserrat', sans-serif
+			font-weight: 700
+			font-size: 16px
+			line-height: 22px
+			color: $black
 			&_large
 				font-weight: 800
 				font-size: 30px
@@ -26,6 +68,8 @@
 				text-align: center
 				color: $dark
 		&-text
+			margin-top: 12px
+			margin-bottom: 17px
 			font-family: 'Inter', sans-serif
 			font-size: 14px
 			line-height: 25px
@@ -41,8 +85,14 @@
 			flex-direction: column
 			align-items: center
 		&-img
+			margin: 20px 50px
+			max-width: 109px
 			&_large
+				margin: 0
 				max-width: 314px
+			&_small
+				margin: 0
+				max-height: 50px
 	&__button
 		margin-top: -50px
 		padding: 5px 10px
@@ -54,9 +104,28 @@
 		background-color: transparent
 		border: 1px solid #949CAA
 		border-radius: 2px
+		cursor: pointer
 	&__note
 		font-family: 'Inter', sans-serif
 		font-size: 13px
 		line-height: 20px
 		text-align: center
 		color: $grey
+	&__arrow-wrapper
+		position: absolute
+		z-index: 9
+		&_1
+			top: 150px
+			right: -76px
+		&_2
+			top: 150px
+			right: -76px
+			transform: scale(1, -1)
+		&_3
+			top: 210px
+			right: -26px
+			transform: rotate(90deg)
+		&_4
+			top: 210px
+			right: -26px
+			transform: rotate(90deg)
