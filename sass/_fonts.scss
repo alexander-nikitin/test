@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Lato Regular';
+  src:
+  url('../fonts/lato/lato-regular.woff') format('woff'),
+  url('../fonts/lato/lato-regular.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lato Bold';
+  src:
+  url('../fonts/lato/lato-bold.woff') format('woff'),
+  url('../fonts/lato/lato-bold.woff2') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Somatic-Rounded';
+  src:
+  url('../fonts/somatic/Somatic-Rounded.woff') format('woff'),
+  url('../fonts/somatic/Somatic-Rounded.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
